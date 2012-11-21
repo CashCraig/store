@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Store</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+	<head>
+		<title>Classical Legends</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<%= stylesheet_link_tag    "application", :media => "all" %>
+		<%= javascript_include_tag "application" %>
+		<%= csrf_meta_tags %>
+	</head>
+	<body>
+	
+		<div id="wrapper">		
+			<header>
+				<img src="/assets/topleft.png" alt="Ionic Column" class="columnleft" />
+				<img src="/assets/topright.png" alt="Ionic Column" class="columnright" />	
+				<img src="/assets/banner.jpg" alt="banner" class="banner" />	
+			</header>
 
-<%= yield %>
-
-</body>
+			<nav>
+				<ul>	
+					<li><img src="/assets/menuBorder.png" alt="menu border" /></li>
+					<li><%= link_to 'HOME', 'home' %></li>
+					<li><img src="/assets/menuBorder.png" alt="menu border" /></li>
+					<li><%= link_to 'ABOUT', 'products' %></li>
+					<li><img src="/assets/menuBorder.png" alt="menu border" /></li>
+					<li><%= link_to 'PRODUCTS', 'products' %></li>
+					<li><img src="/assets/menuBorder.png" alt="menu border" /></li>
+					<li><%= link_to 'CONTACT US', 'products' %></li>
+					<li><img src="/assets/menuBorder.png" alt="menu border" /></li>
+					<li><%= link_to 'SITE MAP', 'products' %></li>
+					<li><img src="/assets/menuBorder.png" alt="menu border" /></li>
+				</ul>
+			</nav>
+			
+			<%= yield %>
+			
+			<footer>
+				<img src="/assets/bottomleft.png" alt="Ionic Column" class="columnleft" />
+				<img src="/assets/bottomright.png" alt="Ionic Column" class="columnright" /> 
+			</footer>	
+		</div>
+	</body>
 </html>

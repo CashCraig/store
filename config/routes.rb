@@ -1,25 +1,23 @@
 Store::Application.routes.draw do
+  resources :posts
+
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
 
   resources :statuses
-
   resources :categories
-
   resources :provinces
-
   resources :customers
-
   resources :line_items
-
   resources :orders
-
   resources :products
-	
+	resources :posts
 	resources :admin_users
 	
-	root :to => 'products#index'
+	root :to => 'home#index'
+	
+	match '/home' => 'home#index', :as => :home
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

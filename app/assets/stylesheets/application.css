@@ -11,3 +11,114 @@
  *= require_self
  *= require_tree .
 */
+body {
+	margin: 0 auto;
+	font-family: sans-serif;
+	font-size: 12px;
+	background-color: #882;
+}
+	#wrapper {		
+		width: 1000px;
+		border: 2px solid #660;
+		margin: 15px auto;
+		border-radius: 10px;
+		box-shadow: 5px 5px 5px #660;
+		background: #cc6;
+		overflow: auto;
+	}
+		header {
+			height: 150px;
+			width: 100%;
+			margin-top: 10px;
+		}
+		.columnleft{
+			width: 100px;
+			float: left;
+		}		
+		.columnright{
+			width: 100px;
+			float: right;
+		}	
+		.banner {
+			overflow: auto;
+			height: 150px;
+			width: 790px;	
+			border: 1px solid #660;		
+			border-radius: 10px;
+	  	box-shadow: 3px 3px 3px #660;	
+		}
+		nav {			
+			height: 25px;
+			width: 100%;
+			background: url(/assets/menuBackground.png) repeat-x;		
+		}
+			nav ul li {
+				display: inline;				
+				padding: 20px;	
+				margin-bottom: 5px;
+				position: relative;
+				bottom: 8px;
+			}
+				nav ul li img {
+					position: relative;
+					top: 8px;
+				}
+			nav a {
+				color: #fff;
+				font-size: 1.2em;
+				text-decoration: none;
+				font-weight: bold;
+			}
+			nav a:hover, nav a:focus {
+				#color: #000;
+				text-decoration: underline;
+			}	
+		#content {
+			width: 640px;
+			float: right;	
+			margin-right: 15px;
+		}			
+			#content a {
+				color: #660;
+				font-weight: bold;
+				text-decoration: none;
+				font-size: 1.1em;
+			}
+		.posts {
+			float: left;
+			width: 180px;
+		}		
+		.product {
+			border: 2px solid #660;
+			padding: 5px;
+			margin: 5px;
+			height: 220px;
+		}
+		.product img {
+			float: right;
+			height: 200px;
+			margin: 5px;
+		}
+		.box {
+			width: 180px;
+			color: #000;
+			margin: 10px;
+			padding: 10px;
+			background: #fff;
+			border: 2px solid #660;
+			font-weight: bold;
+      border-radius: 10px;
+	  	box-shadow: 3px 3px 3px #660;		
+		}
+     .box img { float: right; }					
+		.news {
+			text-align: center;
+			font-family: algerian;
+			font-size: 2em;
+		}
+		footer {	
+			overflow: auto;
+			height: 150px;
+			width: 100%;	
+			margin-bottom: 10px;
+		}
