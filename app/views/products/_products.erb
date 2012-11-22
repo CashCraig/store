@@ -1,0 +1,8 @@
+<% @products.each do |product| %>	
+	<div id="content">
+		<p><%= image_tag(product.image,:width=>"20%") %></p>
+    <h2><%= product.name %></h2> 
+		<h3><%= product.author %></h3> 		
+    <p><%= product.description %></p>
+  </div>
+<% end %>

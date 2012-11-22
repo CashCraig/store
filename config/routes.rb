@@ -17,7 +17,11 @@ Store::Application.routes.draw do
 	
 	root :to => 'home#index'
 	
-	match '/home' => 'home#index', :as => :home
+	match '/home' => 'home#index', :as => 'home'
+	match '/products' => 'products#index', :as => 'products'
+	
+	match 'search' => 'search#search', :as => 'search'
+	match 'results' => 'search#search_results', :as => 'results', :via => :post
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

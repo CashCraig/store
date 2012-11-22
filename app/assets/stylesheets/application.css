@@ -74,31 +74,20 @@ body {
 				text-decoration: underline;
 			}	
 		#content {
-			width: 640px;
+			width: 700px;
 			float: right;	
-			margin-right: 15px;
+			padding: 10px;
 		}			
 			#content a {
 				color: #660;
 				font-weight: bold;
-				text-decoration: none;
 				font-size: 1.1em;
 			}
 		.posts {
 			float: left;
 			width: 180px;
 		}		
-		.product {
-			border: 2px solid #660;
-			padding: 5px;
-			margin: 5px;
-			height: 220px;
-		}
-		.product img {
-			float: right;
-			height: 200px;
-			margin: 5px;
-		}
+
 		.box {
 			width: 180px;
 			color: #000;
@@ -110,7 +99,7 @@ body {
       border-radius: 10px;
 	  	box-shadow: 3px 3px 3px #660;		
 		}
-     .box img { float: right; }					
+    .box img { float: right; }					
 		.news {
 			text-align: center;
 			font-family: algerian;
