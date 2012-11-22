@@ -1,3 +1,3 @@
-ActiveAdmin.register Post do
+ActiveAdmin.register Post, :as => "News" do
   
 end

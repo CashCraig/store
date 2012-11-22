@@ -17,6 +17,7 @@ body {
 	font-size: 12px;
 	background-color: #882;
 }
+a { text-decoration: none; }
 	#wrapper {		
 		width: 1000px;
 		border: 2px solid #660;
@@ -54,42 +55,50 @@ body {
 		}
 			nav ul li {
 				display: inline;				
-				padding: 20px;	
+				padding: 25px;	
 				margin-bottom: 5px;
 				position: relative;
 				bottom: 8px;
+				font-family: algerian;
 			}
 				nav ul li img {
 					position: relative;
 					top: 8px;
 				}
-			nav a {
+			nav a, nav a:visited {
 				color: #fff;
-				font-size: 1.2em;
-				text-decoration: none;
-				font-weight: bold;
+				font-size: 1.2em;				
 			}
 			nav a:hover, nav a:focus {
 				#color: #000;
 				text-decoration: underline;
 			}	
 		#content {
-			width: 700px;
+			width: 725px;
 			float: right;	
 			padding: 10px;
-		}			
-			#content a {
-				color: #660;
+			color: #000;
+		}		
+		#content > img {
+			border: 2px solid black;
+			margin-left: 50px;
+		}
+			#content a, #content a:visited {
+				color: #000;
+				font-size: 1.1em;
 				font-weight: bold;
+			}
+			#content a:hover, #content a:focus {
+				color: #fff;
+				text-decoration: underline;
 				font-size: 1.1em;
 			}
 		.posts {
 			float: left;
-			width: 180px;
+			width: 200px;
 		}		
-
-		.box {
-			width: 180px;
+		.news {
+			width: 100%;
 			color: #000;
 			margin: 10px;
 			padding: 10px;
@@ -99,11 +108,39 @@ body {
       border-radius: 10px;
 	  	box-shadow: 3px 3px 3px #660;		
 		}
-    .box img { float: right; }					
-		.news {
+    .news img { float: right; }		
+		.newsbox, .searchbox {
+			font-weight: bold;
 			text-align: center;
 			font-family: algerian;
+			color: #000;
+			padding: 10px;
+			margin: 10px;
+			background: #aa0;
+			border: 2px solid #660;
+      border-radius: 10px;
+			box-shadow: 3px 3px 3px #660;
+		}
+		.newsbox {
 			font-size: 2em;
+			width: 100%;			
+		}
+		.searchbox {
+			font-size: 1.5em;
+			float: right;
+		}
+		.book {
+			width: 78%;	
+			margin: 10px 0 10px 0;
+			padding: 10px;
+			background: #fff;
+			border: 2px solid #660;
+      border-radius: 10px;
+	  	box-shadow: 3px 3px 3px #660;
+		}
+		.book img {
+			float: left;
+			margin: 10px;
 		}
 		footer {	
 			overflow: auto;

@@ -1,8 +1,12 @@
-<% @products.each do |product| %>	
-	<div id="content">
-		<p><%= image_tag(product.image,:width=>"20%") %></p>
-    <h2><%= product.name %></h2> 
-		<h3><%= product.author %></h3> 		
-    <p><%= product.description %></p>
-  </div>
-<% end %>
+
+	<% @products.each do |product| %>	
+		<div class="book">	
+			<%= link_to image_tag(product.image,:width=>"25%"), product %>
+			
+				<h2><%= link_to product.name, product %></h2> 
+				<hr/>
+				<b>Author: <%= product.author %></b> 		
+				<p><%= product.description %></p>
+				<hr/>
+		</div>
+	<% end %>

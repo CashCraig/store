@@ -1,10 +1,10 @@
-<div class="box news">NEWS FEED</div>
+<div class="newsbox">NEWS FEED</div>
 			<% @posts.each do |post|%>
-			<div class="box">
-				<%= post.created_at.strftime('%b %d, %Y') %>
-				<hr/>
-				<%= image_tag post.image %>
-				<%= post.content %>
-				<hr/>					
-			</div>
+		<div class="news">
+			<%= post.created_at.strftime('%b %d, %Y') %>
+			<hr/>
+			<%= image_tag post.image %>
+			<%= post.content %>
+			<hr/>					
+		</div>
 			<% end %>
