@@ -1,5 +1,4 @@
 Store::Application.routes.draw do
-  resources :posts
 
   ActiveAdmin.routes(self)
 

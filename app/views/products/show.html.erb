@@ -2,20 +2,16 @@
 
 	<p id="notice"><%= notice %></p>
 
-	<p><%= image_tag(@product.image,:width=>"30%") %></p>
+	<p><%= image_tag(@product.image,:width=>"25%") %></p>
 
 	<h2><%= @product.name %></h2>
-	<b>Author: <%= @product.author %></b>
-	<p><%= @product.description %></p>
-
-	<p><b>Price: </b><%= @product.price %></p>
-
-	<p><b>Sale price: </b><%= @product.sale_price %></p>
-
-	<p><b>Stock quantity: </b><%= @product.stock_quantity %></p>
-
-	<p><b>Category: </b><%= @product.category_id %></p>
-
-	<p><b>Status: </b><%= @product.status_id %></p>
+	
+	<p><b>Author: <%= @product.author %></b></p>
+	
+	<p><b>Category: </b><%= @product.category.name %>      <b>Price: $</b><%= @product.price %></p>
+	
+	<p><%= @product.description %><br/><br/></p>
+	
+	
 
 </div>
